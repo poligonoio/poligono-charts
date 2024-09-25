@@ -62,11 +62,21 @@ spec:
               secretKeyRef:
                 name: {{ include "poligono.fullname" . }}
                 key: INFISICAL_PROJECT_ID
-          - name: TRINO_DSN
+          - name: QUERY_ENGINE_DSN
             valueFrom:
               secretKeyRef:
                 name: {{ include "poligono.fullname" . }}
-                key: TRINO_DSN
+                key: QUERY_ENGINE_DSN
+          - name: OAUTH2_ISSUER
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "poligono.fullname" . }}
+                key: OAUTH2_ISSUER
+          - name: OAUTH2_AUDIENCE
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "poligono.fullname" . }}
+                key: OAUTH2_AUDIENCE
           - name: AUTHENTICATION_ENABLE_RBAC
             value: {{ .Values.env.authenticationEnableRBAC | default "true" | toString | quote }}
           - name: AUTHENTICATION_TYPE
