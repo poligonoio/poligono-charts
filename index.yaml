@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  poligono:
+  - apiVersion: v2
+    appVersion: main
+    created: "2024-09-25T01:48:16.736565153Z"
+    description: The official Helm chart to deploy Poligono, a platform to access
+      data using plain English.
+    digest: 09df43869e315005530b595e91ff8077954faa8f4c06ec474d2e1d29b0fde581
+    home: https://poligono.xyz/
+    name: poligono
+    sources:
+    - https://github.com/poligonoio/poligono
+    type: application
+    urls:
+    - https://github.com/poligonoio/poligono-charts/releases/download/poligono-0.1.0/poligono-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-09-25T01:48:16.736575533Z"
